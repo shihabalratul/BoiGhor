@@ -2,8 +2,7 @@ import React from 'react';
 import {
 	BrowserRouter as Router,
 	Switch,
-	Route,
-	Link
+	Route
 } from "react-router-dom";
 import AddProduct from '../AddProduct/AddProduct';
 import Manage from '../Manage/Manage';

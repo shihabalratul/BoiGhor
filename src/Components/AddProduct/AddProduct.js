@@ -28,10 +28,6 @@ const AddProduct = () => {
 		}
 
 
-		// setResult({ result: true })
-
-		// 	// setResult({ result: false })
-		// }
 	};
 
 	const isMounted = useRef(false);
@@ -40,7 +36,6 @@ const AddProduct = () => {
 		if (isMounted.current) {
 			axios.post('https://strawberry-cobbler-47407.herokuapp.com/bookDetails', product)
 				.then(res => {
-					console.log(res)
 					setResult({ result: 'Book successfully added' })
 				})
 				.catch(function (error) {
@@ -65,7 +60,7 @@ const AddProduct = () => {
 
 			})
 			.catch(function (error) {
-				console.log(error);
+
 			});
 
 	}

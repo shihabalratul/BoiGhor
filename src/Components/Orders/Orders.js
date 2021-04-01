@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+
 import OrderedProduct from '../OrderedProduct/OrderedProduct';
 
 const Orders = () => {
@@ -9,6 +10,7 @@ const Orders = () => {
 	const loggedInUser = JSON.parse(localStorage.getItem('user'))
 	const { email } = loggedInUser;
 	const [orders, setOrders] = useState([])
+
 	useEffect(() => {
 		setLoading({ loading: true })
 		axios({
@@ -17,6 +19,7 @@ const Orders = () => {
 			.then(res => {
 				setOrders(res.data)
 				setLoading({ loading: false })
+
 			})
 	}, [email])
 	console.log(orders)

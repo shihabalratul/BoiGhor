@@ -8,8 +8,6 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 	const loggedInUser = JSON.parse(localStorage.getItem('user'))
 
-	console.log(loggedInUser)
-
 	const handleSignOut = () => {
 		localStorage.removeItem('user')
 		window.location.reload();

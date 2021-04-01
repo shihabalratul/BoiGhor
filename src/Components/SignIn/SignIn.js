@@ -22,8 +22,7 @@ const SignIn = () => {
 					email: res.user.email
 				}
 				localStorage.setItem('user', JSON.stringify(userInfo))
-				// console.log(userInfo)
-				// setLoggedInUser(userInfo)
+
 				history.replace(from);
 				window.location.reload();
 			}).catch((error) => {

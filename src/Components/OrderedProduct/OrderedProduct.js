@@ -1,16 +1,28 @@
 import axios from 'axios';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const OrderedProduct = props => {
 	const { bookName, authorName, price, img, date, _id } = props.order;
 
 	const handleCancel = id => {
+
 		axios({
 			method: 'delete',
-			url: 'https://strawberry-cobbler-47407.herokuapp.com/cancelOrder/' + id,
+			url: 'http://localhost:5000/cancelOrder/' + id,
+			headers: { 'Content-Type': 'application/json' }
 
-		});
-		window.location.reload();
+		})
+			.then(res => {
+				window.location.reload();
+			})
+			.catch(err => {
+				console.log(err)
+			})
+
+
+
+
+
 	}
 	return (
 

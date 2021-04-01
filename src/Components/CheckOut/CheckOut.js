@@ -35,7 +35,6 @@ const CheckOut = () => {
 		}
 		axios.post('https://strawberry-cobbler-47407.herokuapp.com/checkoutDetails', checkoutDetails)
 			.then(res => {
-				console.log(res)
 				setResult({ result: 'Book successfully added' })
 				history.replace(from);
 
