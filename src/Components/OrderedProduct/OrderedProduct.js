@@ -8,7 +8,7 @@ const OrderedProduct = props => {
 
 		axios({
 			method: 'delete',
-			url: 'http://localhost:5000/cancelOrder/' + id,
+			url: 'https://strawberry-cobbler-47407.herokuapp.com/cancelOrder/' + id,
 			headers: { 'Content-Type': 'application/json' }
 
 		})
