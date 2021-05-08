@@ -12,7 +12,9 @@
 
 
 ### Description:
-This website is for dummy book shop. You can order a book. You can see ordered book list. You can cancel order. Also you can add new books from admin panel and manage books. You can remove books from database from manage in admin panel. Your order will be saved along with your email in the MongoDB database. By cancelling your from orders tab you can remove the specific order from database. Orders tab is personalized for each user.
+1. User can Order books, Add new books, Remove Orders and Remove any books from the website.
+2. To Order, Remove, or Add new books user have to log in with a google account which is implemented using firebase authentication.
+3. The home page is responsive with mobile and pc.
 
 ### Live site link: [ https://boi-ghor-cd428.web.app/ ]
 ### Backend code link: [ https://github.com/shihabalratul/BoiGhor-server ]
